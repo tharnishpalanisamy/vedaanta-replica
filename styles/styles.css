@@ -416,3 +416,24 @@ a.top-item{
 .accordion-button{
     padding:20px 28px;
 }
+
+
+.accordion-button::after{
+    display:none;
+}
+
+.accordion-button{
+    position:relative;
+}
+
+.accordion-button::before{
+    content:"+";
+    position:absolute;
+    right:30px;
+    font-size:35px;
+    font-weight:600;
+}
+
+.accordion-button:not(.collapsed)::before{
+    content:"−";
+}
