@@ -1,0 +1,418 @@
+*{
+    box-sizing: border-box; 
+    padding: 0; 
+    margin: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+.top-section{
+    background: #fcba64;
+    color: #505050;
+    padding: 2px 0;
+}
+
+a.top-item{
+    text-decoration: none ; 
+    color: #505050;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+.top-city{
+    color: #505050; 
+    font-weight: 700;
+
+}
+
+.social-img{
+    width: 25px; 
+    height: auto;
+}
+
+.line {
+    display: inline-block;
+    height: 20px;
+    border-left: 1px solid white;
+}
+
+.logo{
+    height:70px;
+    width:auto;
+}
+
+.navbar{
+    background:#fff;
+    padding:18px 0; 
+    position: sticky; 
+    top: 0; 
+    border-bottom: 1px solid #f26b21;
+    z-index: 100;
+}
+
+.navbar-nav{
+    gap:18px;
+}
+
+.nav-link{
+    color:#000;
+    font-size:15px;
+    font-weight:500;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color:#f26b21;
+}
+
+.text-orange{
+    color:#f26b21 !important;
+}
+
+.contact-btn{
+    background:#8aa873;
+    color:#fff;
+    border-radius:5px;
+    font-weight:600;
+}
+
+.contact-btn:hover{
+    background:#799965;
+    color:#fff;
+}
+
+.home-img-container{
+    position: relative;
+}
+
+.home-text{
+    color: white; 
+    display: block;
+    position: absolute; 
+    width: 80%;
+    text-align: center;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.gradient-text {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    background: linear-gradient(to right, #FF5200, #FFBA62);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text{
+    font-weight: 400 !important; 
+    font-size: 24px !important; 
+    color: black; 
+    text-align: justify;
+    line-height: 30px;
+}
+
+.location-para{
+    color: #505050; 
+    font-size: 18px;
+}
+
+.blue{
+    color: #2d8df9;
+}
+
+.custom-card-title{
+    padding: 20px 20px 0; 
+    font-size: 20px; 
+    color: #404040; 
+    font-weight: 700 !important;
+    line-height: 26px;
+
+}
+
+.custom-card-secondary{
+    padding: 0 20px 0; 
+    color: #606060; 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.custom-card-text{
+    padding: 15px 20px 0;
+    color: #606060;
+    font-size: 17px;
+    line-height: 22px;
+}
+.exploreBtn{
+    background: #7ea174;
+    width: 70%;
+    color: #EDF2EB;
+    font-size: 14px !important;
+    padding: 4px 10px !important;
+    font-weight: 500 ;
+    letter-spacing: 0px;
+    border: 1px solid #7EA170;
+    transition: 0.3s;
+}
+
+.exploreBtn:hover{
+    background: #607b57;
+    border: 1px solid #607b57;
+}
+
+.mySwiper{
+    width:100%;
+    padding:20px 0;
+    scroll-behavior: smooth; 
+    transition: 0.3s;
+    overflow: hidden;
+}
+.card-container{
+    overflow: hidden;
+}
+.swiper-slide{
+    height:auto;
+}
+
+.card{
+    height:100%;
+}
+
+.swiper-button-prev ,.swiper-button-next {
+    width: 35px; 
+    height: 50px; 
+    background:#7ea170 ; 
+    font-size: 4px !important; 
+    color: #f6ffff; 
+}
+
+.green-bg{
+    background-color: #cad5bf;
+}
+.benefits-title{
+    font-size: 30px !important; 
+    color: #000;
+    font-weight: 400;
+
+}
+
+.benefits-para{
+    padding-top: 15px;
+    font-size: 18px; 
+    color: #505050; 
+
+}
+
+.benefits-img-container{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.benefits-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: imageZoom 5s ease infinite;
+    transform-origin: center;
+}
+
+@keyframes imageZoom{
+    from{
+        transform: scale(2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.benefits-subtitle{
+    font-size: 24px; 
+    font-weight: 400;
+}
+
+.benefits-subtitle-text{
+    font-size: 18px; 
+    color: #505050;
+
+}
+
+.retirement-title{
+    font-size: 30px; 
+    font-weight: 400; 
+    color: #000;
+}
+
+.retirement-para{
+    font-size: 18px; 
+    color: #505050;
+}
+
+.card2-title{
+    font-size: 20px; 
+    color: #404040; 
+    font-weight: 400; 
+    padding: 20px 20px 0; 
+
+}
+
+/* swiper 2 */ 
+.retirementSwiper{
+    width:100%;
+    padding:20px 10px 50px;
+}
+
+.retirementSwiper .swiper-slide{
+    height:auto;
+}
+
+.retirementSwiper .card{
+    height:100%;
+}
+
+.retirement-card{
+    display:flex;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    height:100%;
+}
+
+.retirement-image{
+    width:35%;
+}
+
+.retirement-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.retirement-content{
+    flex:1;
+    padding:32px 40px;
+}
+
+
+@media(max-width:768px){
+
+    .retirement-card{
+        flex-direction:column;
+    }
+
+    .retirement-image{
+        width:100%;
+        height:220px;
+    }
+
+    .retirement-content{
+        width:100%;
+    }
+
+}
+
+.card3-title{
+    font-size: 20px; 
+    color: #404040;
+    padding-left: 20px;
+}
+
+.card3-text{
+    font-size: 17px; 
+    color: #404040;
+    padding-left: 20px;
+}
+
+.about-bg{
+    background: #fbebd2; 
+}
+
+.vedaanta-title{
+    font-size: 30px; 
+    font-weight: 400; 
+    margin-bottom: 20px; 
+    padding-bottom: 10px;
+}
+
+.vedaanta-text{
+    color: #505050; 
+    font-size: 18px; 
+    margin-bottom: 20px; 
+    line-height: 24px;  
+}
+
+.resident-name{
+    color: #404040; 
+    font-size: 20px; 
+    font-weight: 400; 
+
+}
+
+.resident{
+    color: #AAA; 
+}
+
+.review{
+    color: #606060; 
+    font-size: 18px;
+}
+
+.reviewSwiper{
+    width:100%;
+    padding:20px 10px 55px;
+}
+
+.reviewSwiper .swiper-slide{
+    height:auto;
+}
+
+.review-card{
+    height:100%;
+    padding:25px;
+}
+
+.review-pagination .swiper-pagination-bullet-active{
+    background:#7f9f67;
+}
+.review2{
+    font-size: 18px; 
+    color: #404040;
+    line-height: 24px;
+}
+
+.active{
+    background: #FFBA62;
+}
+.inactive{
+    background: #fbebd2;
+}
+
+.accordion-button:not(.collapsed){
+    background: #FFBA62;
+    color: #000;
+}
+
+.accordion-button.collapsed{
+    background: #fbebd2;
+    color: #000;
+}
+
+.accordion-item{
+    border: none;
+    border-radius: 8px !important;  
+    overflow: hidden;
+}
+
+.accordion-button{
+    box-shadow:none !important;
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+.accordion-button{
+    padding:20px 28px;
+}
