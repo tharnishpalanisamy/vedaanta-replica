@@ -427,13 +427,13 @@ a.top-item{
 }
 
 .accordion-button::before{
-    content:"+";
-    position:absolute;
-    right:30px;
-    font-size:35px;
-    font-weight:600;
+    content: '+'; 
+    position: absolute; 
+    right: 30px; 
+    font-size: 35px; 
+    font-weight: 600;
 }
 
-.accordion-button:not(.collapsed)::before{
+.accordion-button:not(.collapsed)::before {
     content:"−";
 }
