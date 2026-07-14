@@ -437,3 +437,7 @@ a.top-item{
 .accordion-button:not(.collapsed)::before {
     content:"−";
 }
+
+.form-bg{
+    background: #f5f5f5;
+}
