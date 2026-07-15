@@ -51,14 +51,31 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">LIFE AT VEDAANTA</a></li>
-                <li class="nav-item"><a class="nav-link text-orange" href="#">LOCATIONS</a></li>
+                <li class="nav-item life">
+                    <a class="nav-link " href="#">LIFE AT VEDAANTA</a> 
+                    <ul class="life-ul ">
+                        <li><a href="#">Services</a></li>   
+                        <li><a href="#">Technology</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item location">
+                    <a class="nav-link text-orange " href="#">LOCATIONS</a>
+                    <ul class="location-ul ">
+                        <li><a href="">Coimbatore</a></li>  
+                        <li><a href="">Bangalore</a></li> 
+                        <li><a href="">Hosur</a></li> 
+                        <li><a href="">Kerala</a></li> 
+                        <li><a href="">Chennai</a></li> 
+                        <li><a href="">Upcomming...</a></li>
+
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="#">VEDAANTA VANTAGE</a></li>
                 <li class="nav-item"><a class="nav-link " href="#">CAREER & PARTNERSHIPS</a></li>
-                <a href="#" class="btn contact-btn">CONTACT US</a>
+                <a href="#" class="btn contact-btn ">CONTACT US</a>
             </ul>
 
         </div>
@@ -129,14 +146,14 @@
             </div>
 
             <!--Cards--> 
-                <div class="card-container mx-5 container">
+                <div class="card-container mx-md-5 container">
 
     <div class="swiper mySwiper mt-3">
 
-        <div class="swiper-wrapper mx-5">
+        <div class="swiper-wrapper mx-md-5">
 
             <!-- Card 1 -->
-            <div class="swiper-slide">
+            <div class="swiper-slide d-flex justify-content-center">
                 <div class="card">
                     <img src="assets/Images/houses/house1.jpg" class="card-img-top img-fluid rounded-2">
 
@@ -274,12 +291,15 @@
             </p>
 
             <div class="row pt-3 pb-5 mx-auto g-5 ">
-                <div class="col-5">
+                <div class="col-12 col-md-5">
                     <div class="benefits-img-container">
-                        <img src="assets/Images/benefit.png" alt="" class="benefits-img">
+                        <video width="100%" height="auto" preload="auto" playsinline="" autoplay="" muted="" loop="" style="border-radius:8px">
+  													<source src="assets/videos/senior-couple.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+													</video>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-md-7">
                     <p class="benefits-subtitle-text">Here are benefits that make Vedaanta Special:</p> 
 
                     <h3 class="benefits-subtitle">Transparency</h3> 
@@ -559,8 +579,8 @@
     </div>
 
     <div class="container">
-        <div class="row mt-5 justify-content-center mx-5 g-2">
-            <div class="col-11 col-md-6">
+        <div class="row mt-5 justify-content-center mx-md-5 g-2">
+            <div class="col-12 col-md-6">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/sdhMsruwhWU?si=cFGMDl_inMgYBIUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" style="border-radius:8px">
                 </iframe>
             </div>
@@ -585,10 +605,10 @@
 <section id="faq">
     <div class="container mt-5 py-5">
         <h3 class="vedaanta-title text-center">Frequently Asked Questions</h3>
-        <div class="container mx-5 "> 
+        <div class="container mx-md-5 "> 
 
-            <div class="row mx-10">
-                <div class="col-11">
+            <div class="row justify-content-center">
+                <div class="col-12">
                     <div class="accordion mt-4" id="accordionExample">
 
 
@@ -681,7 +701,7 @@
                     <div class="col-10 col-md-8">
                         <div class="card mt-4 rounded-0">
                             <div class="card-header form-header-bg rounded-0">
-                                <h4 class="text-center form-title">Request More Details</h4>
+                                <h4 class="form-title">Request More Details</h4>
                             </div>
 
                             <div class="card-body">
@@ -740,9 +760,9 @@
 </section>
 
 <section id="footer bg-dark"> 
-<div class="container-fluid black pt-2">
+<div class="container-fluid black pt-2 pb-5 ">
     <div class="container">
-        <div class="row mx-5 pt-5 mt-3">
+        <div class="row mx-md-5 pt-5 mt-3">
         <div class="col-12 col-lg-3">
             <ul class="footer-ul">
                 <img src="assets/logos/vedaanta-new-logo-reverse.svg" alt="" style="width: 150px;">
@@ -805,20 +825,30 @@
 
 <div class="copyright copyright-bg ">
     <div class="container d-flex justify-content-between align-items-center">
-        <p class="copyright-para pt-3 ps-5">Copyright &copy; VEDAANTA SENIOR LIVING PVT.LTD.</p>
-        <p class="copyright-para pt-3 pe-5">Website by <span class="designer">KICKASS DESIGN</span></p>
+        <p class="copyright-para pt-3 ps-md-5">Copyright &copy; VEDAANTA SENIOR LIVING PVT.LTD.</p>
+        <p class="copyright-para pt-3 pe-md-5">Website by <span class="designer">KICKASS DESIGN</span></p>
     </div>
 </div>
 
-
 <!--Fixed ions--> 
 <div class="icon-container">
-    <a href="" class="whatsapp-btn ">
-        <i class="fa-brands fa-whatsapp whatsapp-icon">
-        </i></a>
-     <a href="#" class="chat-btn">
-        <i class="bi bi-chat-fill fs-2 chat-icon text-light"></i>
+
+    <a href="#" class="top-btn">
+        <i class="fas fa-angle-double-up top-icon"></i>
     </a>
+
+    <a href="#" class="whatsapp-btn ">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+        <span class="notification-badge">1</span>
+    </a>
+     <a href="#chat"
+   class="chat-btn"
+   data-bs-toggle="popover"
+   data-bs-placement="left"
+   data-bs-title="We're Online!"
+   data-bs-content="How may I help you today?">
+    <i class="bi bi-chat-fill chat-icon text-light"></i>
+</a>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

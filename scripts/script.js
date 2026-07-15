@@ -97,3 +97,17 @@ const reviewSwiper = new Swiper(".reviewSwiper", {
     }
 
 });
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl =>
+    new bootstrap.Popover(popoverTriggerEl)
+);
+
+const chatBtn = document.querySelector(".chat-btn");
+
+const popover = new bootstrap.Popover(chatBtn, {
+    trigger: "manual"
+});
+
+popover.show();

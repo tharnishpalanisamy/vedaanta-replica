@@ -477,7 +477,8 @@ input:hover, select:hover, textarea:hover{
     background : #2998e6 ; 
     color : #f5f5f5 ;
     border : 1px solid #2998e6 ; 
-    padding : 4px 12px
+    padding : 4px 12px;
+    border-radius: 4px;
 }
 
 .submitBtn:hover{
@@ -568,15 +569,38 @@ label{
 }
 
 .whatsapp-btn{
+    text-decoration: none;
     position: fixed; 
     z-index: 100; 
     bottom: 70px; 
     right: 12px; 
     background: #25D366; 
     border-radius: 50%; 
-    padding: 12px 15px;
+    padding: 12px 14px;
+
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
 }
 
+.notification-badge{
+    position: absolute; 
+    top: -2px; 
+    right: -3px; 
+    width: 23px; 
+    height: 18px; 
+
+    background-color: red; 
+    color: white; 
+    border-radius: 45%; 
+    display: flex; 
+    justify-content: center ; 
+    align-items: center; 
+    font-size: 12px; 
+    font-weight: 700; 
+
+
+}
 .chat-btn{
     position: fixed; 
     z-index: 100; 
@@ -588,4 +612,116 @@ label{
 }
 .chat-icon{
     font-size: 25px !important;
+}
+
+.top-icon{
+    color: #000;
+    font-size: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.top-btn{
+    text-decoration: none;
+    position: fixed; 
+    z-index: 100; 
+    right: 20px; 
+    bottom: 140px;
+    padding: 8px;
+    border: 1px solid black;
+    transition: 0.3s;
+    animation: hideAndShow 2s ease-in infinite;
+}
+
+@keyframes hideAndShow{
+    0% , 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0; 
+    }
+}
+
+
+@media(max-width : 576px) {
+    .top-btn{
+        right:30px ; 
+    }
+    .whatsapp-btn{
+        right: 20px;
+    }
+    .chat-btn{
+        right: 20px;
+    }
+}
+
+.life{
+    position: relative;
+}
+
+.life-ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: 0.3s;
+    border: 1px solid #fcba64 ;
+    z-index: 100;
+} 
+
+.life:hover .life-ul{
+    display: block;
+}
+
+.location{
+    position: relative;
+}
+
+.location-ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    min-width: 180px;
+    transition: 0.3s;
+    border: 1px solid #fcba64 ;
+    z-index: 100;
+}
+
+.location:hover .location-ul{
+    display: block;
+}
+
+.location-ul li a , .life-ul li a{
+    color: #404040;
+    display: block;
+    font-size: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.location-ul li , .life-ul li {
+    border-bottom: 1px solid #878686;
+    transition: 0.5s;
+}
+
+.location-ul li:last-child , .life-ul li:last-child{
+    border-bottom: none ;
+}
+
+.location-ul li:hover , .life-ul li:hover{ 
+    background: #fcba64;
 }
