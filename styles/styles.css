@@ -725,3 +725,21 @@ label{
 .location-ul li:hover , .life-ul li:hover{ 
     background: #fcba64;
 }
+
+.error{
+    color: #ff0000;
+}
+
+label.error{
+    color: #FF0000;
+    font: 12px Arial, Arimo, Helvetica, sans-serif;
+    padding: 5px 0 0;
+    display: block;
+}
+input.error,
+textarea.error,
+select.error{
+    border:1px solid #ff0000;
+    box-shadow:none;
+    font-family: Arial, Arimo, Helvetica, sans-serif;
+}

@@ -111,3 +111,80 @@ const popover = new bootstrap.Popover(chatBtn, {
 });
 
 popover.show();
+
+
+
+//validation
+$(document).ready(function () {
+ 
+    $("#submit-form").validate({
+ 
+        errorClass:"error",
+
+    errorPlacement:function(error,element){
+
+        if(element.attr("type")=="checkbox"){
+            error.insertAfter(element.parent());
+        }
+        else{
+            error.insertAfter(element);
+        }
+
+    },
+ 
+        rules: {
+ 
+            name: {
+                required: true,
+            },
+ 
+            phone: {
+                required: true,
+                maxlength: 15 , 
+                minlength:5 ,
+                pattern: /^\d+$/ 
+            },
+ 
+            email: {
+                required: true,
+
+                pattern: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/
+            },
+            message: {
+                maxlength: 300
+            },
+ 
+            terms: {
+                required: true
+            }
+ 
+        },
+ 
+        messages: {
+ 
+            name: {
+                required: "Enter a value for this field.", 
+            },
+ 
+            phone: {
+                required: "Enter a value for this field.",
+                pattern: "Enter only numbers" , 
+                minlength:'You must enter at least 5 digits.' , 
+                maxlength:'Maximum limit: 15 digits.'
+            },
+ 
+            email: {
+                required: "Enter a value for this field.",
+                pattern: "Enter a valid email address. (eg: yourname@domain.com)"
+            },
+
+            terms: {
+                required: "Select this option."
+            }
+ 
+        }
+ 
+    });
+ 
+});
+ 
